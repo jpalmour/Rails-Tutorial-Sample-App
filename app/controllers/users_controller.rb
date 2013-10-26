@@ -6,8 +6,8 @@ class UsersController < ApplicationController
 		@user = User.find(params[:id])
   end
 
-  @user = User.new
   def new
+    @user = User.new
   end
 
 	def edit
