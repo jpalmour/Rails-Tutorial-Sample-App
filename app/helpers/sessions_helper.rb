@@ -26,7 +26,6 @@ module SessionsHelper
 	end
 
 	def current_user?(user)
-		logger.debug "in current_user?, user: #{user.attributes.inspect} and current_user: #{current_user.attributes.inspect}"
 		user == current_user
 	end
 
